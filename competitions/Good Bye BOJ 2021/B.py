@@ -1,7 +1,8 @@
+# TLE
+
 import sys
 import random
 
-input = sys.stdin.readline
 sys.setrecursionlimit(10**4)
 
 

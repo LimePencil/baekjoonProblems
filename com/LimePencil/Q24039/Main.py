@@ -1,5 +1,3 @@
-# pass
-
 import sys
 import math
 
