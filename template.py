@@ -1,10 +1,12 @@
 import sys
 
-n = int(sys.stdin.readline().rstrip("\n"))
+input = sys.stdin.readline
 
-arr = list(map(int,sys.stdin.readline().rstrip("\n").split(" ")))
+n = int(input())
 
-t= int(sys.stdin.readline().rstrip("\n"))
+arr = list(map(int,input().split(" ")))
+
+t= int(input())
 for _ in range(t):
     ans = 0
 
