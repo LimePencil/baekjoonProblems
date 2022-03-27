@@ -1,0 +1,1 @@
+print("{:.2f}".format(min(max(100,int(input())*0.01+25),2000)))
