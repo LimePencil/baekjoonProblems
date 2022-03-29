@@ -3,7 +3,7 @@ import sys
 import heapq
 
 def BFS():
-    queue = [(table[0][0],0,0)]
+    queue = [(-table[0][0],0,0)]
     direction = [(1,0),(-1,0),(0,1),(0,-1)]
     visited = [[0]*m for _ in range(n)]
     visited[0][0] = 1
