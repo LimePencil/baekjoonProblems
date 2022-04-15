@@ -5,16 +5,17 @@ def encrypt(ptext: str, key: str) -> str:
     ptext, key = bytes.fromhex(ptext), bytes.fromhex(key)
     ctext = AES.new(key, AES.MODE_ECB).encrypt(ptext)
     return ctext.hex().upper()
-not_nounce=int(input())
+
+s=int(input())
 text=input()
 text_encrypted=input()
-a=["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"]
-b=product(a,repeat=not_nounce*2)
-for k in b:
-    key1="".join(k[:not_nounce])+"0"*(32-not_nounce)
-    key2="".join(k[not_nounce:])+"0"*(32-not_nounce)
-    s=encrypt(encrypt(text, key1),key2)
-    if s==text_encrypted:
+hex_values=["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"]
+possible_keys=product(hex_values,repeat=s*2)
+for k in possible_keys:
+    key1="".join(k[:s])+"0"*(32-s)
+    key2="".join(k[s:])+"0"*(32-s)
+    encrypted_outcome=encrypt(encrypt(text, key1),key2)
+    if encrypted_outcome==text_encrypted:
         print(key1)
         print(key2)
 
