@@ -1,0 +1,1 @@
+print("Korea\n"*int(input()))
