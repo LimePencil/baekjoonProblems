@@ -1,6 +1,6 @@
 import sys
 
-input = sys.stdin.readline
+input = lambda: sys.stdin.readline().rstrip()
 arr = list(map(int,input().split()))
 n = int(input())
 for _ in range(n):
