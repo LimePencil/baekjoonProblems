@@ -19,4 +19,3 @@ while s<=e:
         s=mid+1
     else:
         e=mid-1
-print(s)
