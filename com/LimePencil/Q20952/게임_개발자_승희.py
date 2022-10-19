@@ -5,9 +5,9 @@ n,m = list(map(int,input().split()))
 a=list(map(int,input().split()))
 b=list(map(int,input().split()))
 remainder_to_remove=[0 for _ in range(7)]
-MOD=1000000007
 for e in a:
     remainder_to_remove[e%7]=1
+MOD=1000000007
 to_add=0
 to_add_remainder=0
 # if remainder_to_remove 0 = not exist, 1= not yet removed, 2=removed
