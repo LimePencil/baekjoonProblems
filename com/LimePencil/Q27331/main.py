@@ -1,0 +1,1 @@
+print("".join([input() for _ in range(2)]))
