@@ -5,6 +5,9 @@ while True:
     n = int(input())
     if n==0:
         break
+    if n==1:
+        print(0)
+        continue
     ans=n
     for i in range(2,math.ceil(n**0.5)+1):
         if n%i==0:
