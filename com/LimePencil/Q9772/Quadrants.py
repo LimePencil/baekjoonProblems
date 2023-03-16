@@ -13,4 +13,3 @@ while True:
         print("Q3")
     elif a>0 and b<0:
         print("Q4")
-    
