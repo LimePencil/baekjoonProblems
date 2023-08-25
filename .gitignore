@@ -1,2 +1,4 @@
 .cph
 .DS_Store
+*.exe
+.vscode
